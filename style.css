@@ -1,220 +1,80 @@
+:root {
+  --color-blue-1: #37517e;
+  --color-blue-2: #47b2e4;
+  --color-grey-1: #848484;
+  --color-grey-2: #444444;
+}
+
 * {
   margin: 0;
 }
 
+
 header {
-  height: 700px;
-  background-image: url(images/hero-img.png);
-  background-color: #0077b6;
+  height: auto;
+  background-color: var(--color-blue-1);
   color: white;
   background-size: contain;
   background-position: center 90px;
   background-repeat: no-repeat;
 }
 
-.custom-size {
-  font-size: 2.5rem;
-}
 
 .navbar button {
-  background-color: #0077b6;
+  background:none ;
   border: none;
   font-size: 2rem;
   color: white;
+  
 }
 
 .btn1 {
   border: 0px solid;
   border-radius: 1500px;
-  background-color: #48cae4;
+  background-color: #47b2e4;
   padding: 10px;
   color: white;
 }
 .btn2 {
-  background-color: #0077b6;
+  background:none;
   border: none;
   color: white;
 }
 
-.logos {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: #d5f3f9;
+i {
+  color: #47b2e4;
+  font-size: 1.2rem; 
 }
 
 .logos img {
-  width: 40%;
-  padding: 15px;
+  height: 60px;
 }
 
-.abouts-us {
-  margin-top: 45px;
+@media (min-width : 992px) {
+  .logos img {
+    
+    filter:grayscale();
+  }  
 }
 
-.bar-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1px;
-  margin-bottom: 35px;
+.cards i {
+  font-size: 2rem;
+  color: #47b2e4;
 }
 
-.bar-segment {
-  height: 2px;
-  width: 30px;
-  background-color: gray;
-}
-
-.bar-segment.middle {
-  width: 60px;
-  height: 3px;
-  background-color: #0077b6;
-}
-
-.custom-list {
-  list-style: none;
-  padding-left: 15px;
-}
-.custom-list i {
-  color: #00b4d8;
-}
-
-.learn-more-btn {
-  border: 2px solid #00b4d8;
-  border-radius: 5px;
-  background-color: white;
-  padding: 5px 20px;
-  color: #00b4d8;
-  margin-bottom: 30px;
-}
-
-.why-us {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 750px;
-  background: url(/images/why-us.png) no-repeat center 30px / 70% #d5f3f9;
-}
-
-.why-us-title {
-  margin-top: 255px;
-}
-
-.why-us h2,
-.why-us p {
-  color: #023e8a;
-  font-size: 1.5rem;
-}
-
-.accordion-header button {
-  background-color: #fff;
-  color: #000;
-}
-
-.accordion-container {
-  min-height: 290px;
-  gap: 10px;
-}
-
-.skills {
-  background-image: url(/images/skills.png);
-  background-size: contain;
-  background-position: center 8%;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 750px;
-}
-
-.skills h1 {
-  margin-top: 285px;
-  color: #023e8a;
-}
-
-.skills-container {
-  width: 100%;
-  padding: 20px;
-}
-
-.skill {
-  margin-bottom: 10px;
-}
-
-.skill p {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.skill-bar {
-  background-color: #d5f3f9;
-}
-
-.skill-level {
-  background-color: #023e8a;
-  height: 10px;
-  text-align: right;
-  line-height: 10px;
-  color: white;
-  padding-right: 5px;
-}
-
-.services {
-  background-color: #d5f3f9;
-}
-
-.services h1 {
-  margin-top: 45px;
-  color: #023e8a;
-}
-
-.card-services {
-  background-color: #e9ecef;
-  gap: 15px;
-  height: 750px;
-}
-.first-container,
-.second-container,
-.third-container {
-  background-color: white;
-  width: 95%;
-}
-
-.call-to-action {
-  position: relative;
+.cta {
   background-image: url(images/cta-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px;
+
+  color: white;
 }
 
 .overlay {
   background-color: rgba(2, 62, 138, 0.7);
-  padding: 50px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-.call-to-action h1 {
-  color: white;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-
-.call-to-action p {
-  color: white;
-  margin-bottom: 20px;
-}
-
-.call-to-action button {
+.btn-cta {
   border: 2px solid white;
   background: none;
   color: white;
@@ -222,4 +82,142 @@ header {
   border-radius: 50px;
   cursor: pointer;
   margin-bottom: 50px;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: var(--color-grey-2);
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+  color: var(--color-blue-1);
+}
+
+
+h2 {
+  text-align: center;
+  position: relative;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: -9px;
+  left: calc(50% - 60px);
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: -10px;
+  left: calc(50% - 20px);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+.hero {
+  padding-top: 100px;
+  background-color: var(--color-blue-1);
+}
+
+.hero h1,
+.hero h3 {
+  color: white;
+}
+
+.hero h3 {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--color-blue-2);
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: white;
+  --bs-btn-border-color: var(--color-blue-2);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--color-blue-2);
+  --bs-btn-hover-border-color: var(--color-blue-2);
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--color-blue-2);
+  --bs-btn-active-border-color: var(--color-blue-2);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: var(--color-blue-2);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--color-blue-2);
+  --bs-gradient: none;
+  border-radius: 19px;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--color-blue-2);
+  --bs-btn-border-color: var(--color-blue-2);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--color-blue-2);
+  --bs-btn-hover-border-color: var(--color-blue-2);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--color-blue-2);
+  --bs-btn-active-border-color: var(--color-blue-2);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--color-blue-2);
+  --bs-btn-disabled-border-color: var(--color-blue-2);
+  border-radius: 19px;
+}
+
+.btn-primary.btn-xxl,
+.btn-outline-primary.btn-xxl {
+  padding: 0.6rem 1.5rem;
+  border-radius: 23px;
+}
+
+.mainmenu {
+  transition: all 0.5s;
+}
+
+.mainmenu.header-scrolled {
+  background-color: rgba(40, 58, 90, 0.9);
 }
