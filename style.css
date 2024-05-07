@@ -47,14 +47,13 @@ i {
 }
 
 .logos img {
-  height: 60px;
+  width: 60%;
+  filter:grayscale();
+
 }
 
-@media (min-width : 992px) {
-  .logos img {
-    
-    filter:grayscale();
-  }  
+.logos>div{
+  text-align: center;
 }
 
 .cards i {
@@ -63,15 +62,16 @@ i {
 }
 
 .cta {
-  background-image: url(images/cta-bg.jpg);
+  background-image: url('images/cta-bg.jpg');
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-
   color: white;
 }
 
 .overlay {
   background-color: rgba(2, 62, 138, 0.7);
+  position: relative; 
 }
 
 .btn-cta {
@@ -83,6 +83,8 @@ i {
   cursor: pointer;
   margin-bottom: 50px;
 }
+
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
